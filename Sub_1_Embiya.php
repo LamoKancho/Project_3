@@ -13,7 +13,7 @@
                 <a href="Embiya_Home.html">Home</a>
             </li>
             <li>
-                <a href="Sub_1_Embiya.html">Sub 1</a>
+                <a href="Sub_1_Embiya.php">Sub 1</a>
             </li>
             <li>
                 <a href="Sub_2_Embiya.html">Sub 2</a>
@@ -27,4 +27,8 @@
 <body>
     Hallo !!!
 </body>
+<br>
+<?php
+echo "Today is " . date("l ") . date("Y/m/d") . "<br>";
+?>
 </html>
