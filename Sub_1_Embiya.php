@@ -7,28 +7,21 @@
     <title>Sub 1</title>
 </head>
 <header>
-    <nav>
-        <ul>
-            <li>
-                <a href="Embiya_Home.html">Home</a>
-            </li>
-            <li>
-                <a href="Sub_1_Embiya.php">Sub 1</a>
-            </li>
-            <li>
-                <a href="Sub_2_Embiya.html">Sub 2</a>
-            </li>
-            <li>
-                <a href="Sub_3_Embiya.html">Sub 3</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<body>
-    Hallo !!!
-</body>
-<br>
-<?php
+    <?php include("Menu.php");  ?>
+    <?php
 echo "Today is " . date("l ") . date("Y/m/d") . "<br>";
 ?>
+</header>
+<body>
+    <form action="Sub_2_Embiya.php" method="post">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    
+</form>
+</body>
 </html>
