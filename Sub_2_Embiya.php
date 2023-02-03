@@ -11,8 +11,14 @@
 </header>
 <body>
     <?php 
-    echo"Hier staan de gebruikersnamen: <br>";
+    $len = strlen($_POST['uname']);
+    echo "Hier staan de gebruikersnamen: <br>";
     echo $_POST['uname'];
+
+        if ($len < 5){
+            echo "Je gebruikersnaam is korter dan 5, het is namelijk $len";
+        }
+
     echo " <br><br> Hier staan de wachtwoorden: <br>";
     echo $_POST['psw'];
     ?>
