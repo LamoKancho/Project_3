@@ -7,11 +7,11 @@
     <title>Sub 2</title>
 </head>
 <header>
-    <?php include("Menu.php");  
-    echo"Hier staan de gebruikersnamen:"?>
+    <?php include("Menu.php");?>
 </header>
 <body>
-    <?php
+    <?php 
+    echo"Hier staan de gebruikersnamen: <br>";
     echo $_POST['uname'];
     echo " <br><br> Hier staan de wachtwoorden: <br>";
     echo $_POST['psw'];
