@@ -16,7 +16,7 @@
     echo $_POST['uname'];
 
         if ($len < 5){
-            echo "Je gebruikersnaam is korter dan 5, het is namelijk $len";
+            echo "<br> --> Je gebruikersnaam is korter dan 5, het is $len";
         }
 
     echo " <br><br> Hier staan de wachtwoorden: <br>";
