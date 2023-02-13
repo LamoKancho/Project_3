@@ -1,16 +1,54 @@
-<nav>
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+<div class="menu-bar">
+    <ul>
+
+      <li><a href="Embiya_Home.php">Home</a></li>
+      <li><a href="InlogPaginaEmbiya.php">Inlog Pagina</a></li>
+
+
+
+      <!-- <li><a href="Embiya_Homepage.html">Embiya <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="Embiya_Portfolio.html">Portfolio</a></li>
+                <li><a href="favgame_Embiya.html">Favoriete games</a></li>
+                <li><a href="Game_Embiya.html">Game</a></li>
+              </ul>
+            </div>
+      </li>
+      
+      <li><a href="emrehome_html.html">Emre <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+            <ul>
+              <li><a href="Portfolio_Emre.html">Portfolio</a></li>
+              <li><a href="favgame_Emre.html">Favoriete games</a></li>
+              <li><a href="Game_Emre.html">Game</a></li>
+            </ul>
+          </div>
+    </li>
+
+    <li><a href="Erik_Homepage.html">Erik <i class="fas fa-caret-down"></i></a>
+      <div class="dropdown-menu">
+          <ul>
+            <li><a href="portfolio_Erik.html">Portfolio</a></li>
+            <li><a href="FavGameErik.html">Favoriete games</a></li>
+            <li><a href="Game_Erik.html">Game</a></li>
+          </ul>
+        </div>
+  </li>
+
+  <li><a href="yermaihhome.html">Yermaih<i class="fas fa-caret-down"></i></a>
+    <div class="dropdown-menu">
         <ul>
-            <li>
-                <a href="Embiya_Home.php">Home</a>
-            </li>
-            <li>
-                <a href="Sub_1_Embiya.php">Sub 1</a>
-            </li>
-            <li>
-                <a href="Sub_2_Embiya.php">Sub 2</a>
-            </li>
-            <li>
-                <a href="Sub_3_Embiya.php">Sub 3</a>
-            </li>
+          <li><a href="port_yermaih.html">Portfolio</a></li>
+          <li><a href="favgame_yermaih.html">Favoriete games</a></li>
+          <li><a href="Game_yermaih.html">Game</a></li>
         </ul>
-    </nav>
+      </div>
+    </li>
+
+    </ul>
+  </div> -->

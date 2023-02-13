@@ -13,7 +13,7 @@ echo "Today is " . date("l ") . date("Y/m/d") . "<br>";
 ?>
 </header>
 <body>
-    <form action="Sub_2_Embiya.php" method="post">
+    <form action="Action_page_Embiya.php" method="post">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
     <br>
