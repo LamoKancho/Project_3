@@ -1,34 +1,57 @@
 header {
-	background-color: #333;
-	color: white;
-	padding: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav li {
-	float: left;
+    float: left;
+    position: relative;
 }
 
 nav li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav li a:hover {
-	background-color: #111;
+    background-color: #111;
 }
-#usernamemenu :hover{
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+nav ul ul li {
+    float: none;
+}
+
+nav ul ul li a {
+    display: block;
+    color: #333;
+    padding: 8px 16px;
     text-decoration: none;
 }
-footer{
-	padding: 10px;
+
+nav ul ul li a:hover {
+    background-color: #ddd;
+}
+
+nav li:hover > ul {
+    display: inherit;
 }

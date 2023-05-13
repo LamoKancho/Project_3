@@ -4,13 +4,19 @@
 
 	<header>
         
-		<nav>
-			<ul>
-				<li><a href="index.php"><img src="hatakayalogo.jpg" alt=""></a></li>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="telefoons.php">Telefoons</a></li>
-				<li><a href="klantenservice.php">Klantenservice</a></li>
-				<li><a href="contact.php">Contact</a></li>
+	<nav>
+    <ul>
+        <li><a href="index.php"><img src="hatakayalogo.jpg" alt=""></a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="#">Producten</a>
+            <ul>
+                <li><a href="telefoons.php">Telefoons</a></li>
+                <li><a href="accessoires.php">Accessoires</a></li>
+                <li><a href="hoesjes.php">Hoesjes</a></li>
+            </ul>
+        </li>
+        <li><a href="klantenservice.php">Klantenservice</a></li>
+        <li><a href="contact.php">Contact</a></li>
 				<?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -28,8 +34,9 @@ if (isset($_SESSION['username'])) {
 }
 ?>
 
-			</ul>
-		</nav>
+    </ul>
+</nav>
+
 	</header>
 </body>
 <footer>

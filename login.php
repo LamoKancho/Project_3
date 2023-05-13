@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 	<h1>Inloggen</h1>
-	<?php if (isset($error_message)) { echo "<p style='color: red;'>$error_message</p>"; } ?>
+	<?php if (isset($error_message)) { echo "<p style='color: red; text-align: center;'>$error_message</p>"; } ?>
 	<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 		<label for="username">Gebruikersnaam:</label>
 		<input type="text" id="username" name="username" required><br>
