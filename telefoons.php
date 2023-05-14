@@ -78,8 +78,8 @@ $phones_result = mysqli_query($connection, $phones_query);
 	    <td><?php echo $phone['model']; ?></td>
     	<td><img id="fototable" src="<?php echo $phone['image_url']; ?>"></td>
 	    <td><?php echo "€".$phone['price']; ?></td>
-    	<td><a href="edit_phone.php?id=<?php echo $phone['id']; ?>">Bewerken</a></td>
-    	<td><a href="delete_phone.php?id=<?php echo $phone['id']; ?>">Verwijderen</a></td>
+    	<td><a href="update_producten.php?id=<?php echo $phone['id']; ?>">Bewerken</a></td>
+    	<td><a href="delete_producten.php?id=<?php echo $phone['id']; ?>">Verwijderen</a></td>
 	</tr>
 
 <?php
@@ -90,9 +90,34 @@ $phones_result = mysqli_query($connection, $phones_query);
 </table>
 
 <?php
-// Close the database connection
-mysqli_close($connection);
 ?>
 
 </body>
 </html>
+<?php
+// Connect to the database
+// telefoons.php
+
+
+
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  // Get the values from the form
+  $id = $_POST['id'];
+  $name = $_POST['name'];
+  $price = $_POST['price'];
+
+  // Update the product in the database
+  $sql = "UPDATE phone_models SET name='$name', price='$price' WHERE id='$id'";
+
+  if (mysqli_query($connection, $sql)) {
+    // Redirect back to the previous page
+    header("Location: {$_SESSION['previous_page']}");
+    exit();
+  } else {
+    echo "Error updating record: " . mysqli_error($connection);
+  }
+}
+
+?>
+
