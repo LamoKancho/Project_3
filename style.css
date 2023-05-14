@@ -28,16 +28,7 @@ main {
 	font-size: 20px;
 	font-weight: bold;
 }
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 10px;
-}
+
 .homeimg{
     height: 30vh;
 }
@@ -72,4 +63,18 @@ footer {
 	display: inline-block;
 	width: 1em;
 	margin-left: -1em;
+}
+#fototable{
+	height: 30vh;
+}
+#h1featured{
+	height: 4vh;
+	text-align: center;
+}
+button{
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
