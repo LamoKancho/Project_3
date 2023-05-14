@@ -10,8 +10,9 @@
 
 <body>
 <?php
+//menu er in
 include "menu.php";
-// Connect to MySQL database
+// Maak verbinding met de MySQL-database
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -19,19 +20,19 @@ $database = "accessoires";
 
 $connection = mysqli_connect($host, $username, $password, $database);
 
-// Check connection
+// Controleer of de verbinding is geslaagd
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Query to get all phones from the database
+// Query om alle accessoires uit de database op te halen
 $accessoires_query = "SELECT *, photo_url FROM products";
 $accessoires_result = mysqli_query($connection, $accessoires_query);
 
 
 ?>
 
-<!-- Create a table to display the phones -->
+<!-- Maak een tabel om de accessoires weer te geven -->
 <table>
 <thead>
     <tr>
@@ -45,7 +46,7 @@ $accessoires_result = mysqli_query($connection, $accessoires_query);
 
     <tbody>
     <?php
-    // Loop through the phones and display them in the table
+   // Loop door de accessoires en toon ze in de tabel
     while ($accessoires = mysqli_fetch_assoc($accessoires_result)) {
         ?>
 	<tr>
@@ -66,7 +67,7 @@ $accessoires_result = mysqli_query($connection, $accessoires_query);
 </table>
 
 <?php
-// Close the database connection
+// Sluit de databaseverbinding
 mysqli_close($connection);
 ?>
 

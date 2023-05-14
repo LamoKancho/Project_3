@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 	<h1>Registreren</h1>
+	<!-- hiermee kun je registreren en komt je username email en wachtwoord in de database en kun je vervolgens inloggen via de inlog pagina met de zelfde username en password -->
 	<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 		<label for="username">Gebruikersnaam:</label>
 		<input type="text" id="username" name="username" required><br>
