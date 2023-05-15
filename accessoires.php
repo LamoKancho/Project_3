@@ -12,6 +12,7 @@
 <?php
 //menu er in
 include "menu.php";
+
 // Maak verbinding met de MySQL-database
 $host = "localhost";
 $username = "root";
@@ -53,8 +54,8 @@ $accessoires_result = mysqli_query($connection, $accessoires_query);
     	<td><?php echo $accessoires['name']; ?></td>
     	<td><img id="fototable" src="<?php echo $accessoires['photo_url']; ?>"></td>
 	    <td><?php echo "€".$accessoires['price']; ?></td>
-        <td><a>Edit</a></td>
-        <td><a>Delete</a></td>
+        <td><a href="update_accessoires.php">Edit</a></td>
+        <td><a href="delete_accessoires.php">Delete</a></td>
 
 
 	</tr>

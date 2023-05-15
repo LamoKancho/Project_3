@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2023 at 09:55 PM
+-- Generation Time: May 15, 2023 at 06:21 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -43,7 +43,8 @@ INSERT INTO `products` (`id`, `name`, `photo_url`, `price`) VALUES
 (2, 'AirPods Pro', 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrMqB87TpcPj0o9oU73t2wj0gd8zivd18puX1H5wXf0lfloFndyamHlFNBJ_3fX3j23XbRdrwj-_b2YvIngijdUhfiic0wUqZFmB0v63H3gn4VA00PhnJoJw&usqp=CAE', 279.00),
 (3, '8-pin charger', 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTMjdo6qxregW11tv-Jqgu1tfoOwhSXySEcvdtqPZEp2sjx3D93w_3HkS1REqT_hleKyxwdtnoP4Io5TRmdg67WLPJiOR3bQoOZS8buYV5VkR13VhxfteUF&usqp=CAE', 9.99),
 (4, 'USB-C charger', 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRyPf5ykYb5eFrw80_gVLVCtDH6On3ZxXkqJcTJ66jhZMte1gvSEkJBrEl5JJFkiq64GcANuRdePhyjDNIDO9_5vh2yadUKA_L-5JgIzB2Vy4zohDPChu-I&usqp=CAE', 9.99),
-(5, 'Charger head', 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYUwOZzVVn8ubpx9fYZI7_KAxXacXRi98ibJYPHefShVdIl1VVYGn_Di-exO52vvjRCcsOAfgqKSI0jwfo6-N7yd2J3Ypa9v9osw0KkMfJD_i7TTyGuVEv&usqp=CAE', 4.99);
+(5, 'Charger head', 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYUwOZzVVn8ubpx9fYZI7_KAxXacXRi98ibJYPHefShVdIl1VVYGn_Di-exO52vvjRCcsOAfgqKSI0jwfo6-N7yd2J3Ypa9v9osw0KkMfJD_i7TTyGuVEv&usqp=CAE', 4.99),
+(6, 'niggas', NULL, 1.00);
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

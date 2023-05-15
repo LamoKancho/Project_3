@@ -65,6 +65,7 @@ $phones_result = mysqli_query($connection, $phones_query);
         <th>Prijs</th>
         <th>Bewerken</th>
         <th>Verwijderen</th>
+		<th>Invoegen</th>
     </tr>
 </thead>
 
@@ -78,8 +79,9 @@ $phones_result = mysqli_query($connection, $phones_query);
 	    <td><?php echo $phone['model']; ?></td>
     	<td><img id="fototable" src="<?php echo $phone['image_url']; ?>"></td>
 	    <td><?php echo "€".$phone['price']; ?></td>
-    	<td><a href="update_producten.php?id=<?php echo $phone['id']; ?>">Bewerken</a></td>
-    	<td><a href="delete_producten.php?id=<?php echo $phone['id']; ?>">Verwijderen</a></td>
+    	<td><a href="update_telefoons.php?id=<?php echo $phone['id']; ?>">Bewerken</a></td>
+    	<td><a href="delete.php?id=<?php echo $phone['id']; ?>">Verwijderen</a></td>
+		<td><a href="invoegen.php?id=<?php echo $phone['id']; ?>">Invoegen</a></td>
 	</tr>
 
 <?php
@@ -112,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   if (mysqli_query($connection, $sql)) {
     // Redirect back to the previous page
-    header("Location: {$_SESSION['previous_page']}");
+	header('Location: telefoons.php');
     exit();
   } else {
     echo "Error updating record: " . mysqli_error($connection);

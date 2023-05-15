@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2023 at 09:55 PM
+-- Generation Time: May 15, 2023 at 06:22 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -40,7 +40,7 @@ CREATE TABLE `phone_models` (
 --
 
 INSERT INTO `phone_models` (`id`, `brand`, `model`, `price`, `image_url`) VALUES
-(1, 'Iphone', '13', '823.00', 'https://www.swoop.nl/media/83/e1/a2/1657782555/iphone-13-mini-black.jpg'),
+(1, 'Iphone', '13', '923.00', 'https://www.swoop.nl/media/83/e1/a2/1657782555/iphone-13-mini-black.jpg'),
 (2, 'Iphone', '13 mini', '809.00', 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZCCkusMTWEGw08BeH7RhACRaIghc7akMSSptaNYrCTS72A3a7twHpUpS2wfOnLQ5ZdvCU5fJ4GyMJZVWI5MfdW6yXl70OjLbm_PkQIKjt&usqp=CAE'),
 (3, 'Iphone', '13 pro', '1159.00', 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmb1buVfdeQWx64PKWAD3NQnzp062zEil8AUOwRV7v1u19TVSx_EL4q11YHi4wJFh61Zi64jQj6iBiNRvOujqNk4L2Br8lEg&usqp=CAE'),
 (4, 'Iphone', '13 pro max', '1259.00', 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmb1buVfdeQWx64PKWAD3NQnzp062zEil8AUOwRV7v1u19TVSx_EL4q11YHi4wJFh61Zi64jQj6iBiNRvOujqNk4L2Br8lEg&usqp=CAE'),
@@ -78,7 +78,7 @@ ALTER TABLE `phone_models`
 -- AUTO_INCREMENT for table `phone_models`
 --
 ALTER TABLE `phone_models`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
